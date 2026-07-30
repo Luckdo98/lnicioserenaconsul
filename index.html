@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serena Costa Alves | MEI</title>
+    
+    <!-- Link do Swiper CSS (para o slider) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Link para Ícones (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        /* Hero Slider Section */
+        .slider-container {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 2rem;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .slide-1 { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+        .slide-2 { background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); }
+        .slide-3 { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+
+        .swiper-slide h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .swiper-slide p { font-size: 1.1rem; opacity: 0.9; }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Cards Style */
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-item {
+            margin-bottom: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 0.3rem;
+        }
+
+        .card-item strong {
+            color: #555;
+        }
+
+        .badge {
+            background-color: #27ae60;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-building"></i> Serena Costa Alves
+        </div>
+        <span class="badge">Situação: Ativa</span>
+    </header>
+
+    <!-- Slider Section -->
+    <section class="slider-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1">
+                    <h2>Serena Costa Alves</h2>
+                    <p>CNPJ: 64.700.022/0001-47</p>
+                </div>
+                <div class="swiper-slide slide-2">
+                    <h2>Microempreendedor Individual (MEI)</h2>
+                    <p>Atuação transparente e regularizada no Rio de Janeiro</p>
+                </div>
+                <div class="swiper-slide slide-3">
+                    <h2>Empresa Ativa</h2>
+                    <p>Cadastrada desde Janeiro de 2026</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="container">
+        <div class="grid">
+            
+            <!-- Card 1: Registro -->
+            <div class="card">
+                <h3><i class="fa-solid fa-file-contract"></i> Informações do Registro</h3>
+                <div class="card-item">
+                    <strong>Razão Social:</strong>
+                    <span>64.700.022 Serena Costa Alves</span>
+                </div>
+                <div class="card-item">
+                    <strong>CNPJ:</strong>
+                    <span>64.700.022/0001-47</span>
+                </div>
+                <div class="card-item">
+                    <strong>Data de Abertura:</strong>
+                    <span>25/01/2026</span>
+                </div>
+                <div class="card-item">
+                    <strong>Porte:</strong>
+                    <span>MEI</span>
+                </div>
+                <div class="card-item">
+                    <strong>Natureza Jurídica:</strong>
+                    <span>Empresário (Individual)</span>
+                </div>
+                <div class="card-item">
+                    <strong>Capital Social:</strong>
+                    <span>R$ 10.000,00</span>
+                </div>
+                <div class="card-item">
+                    <strong>Tipo:</strong>
+                    <span>Matriz</span>
+                </div>
+                <div class="card-item">
+                    <strong>Simples Nacional:</strong>
+                    <span>Optante desde 25/01/2026</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Contatos -->
+            <div class="card">
+                <h3><i class="fa-solid fa-address-book"></i> Contatos</h3>
+                <div class="card-item">
+                    <strong>E-mail:</strong>
+                    <span>se****@****.com</span>
+                </div>
+                <div class="card-item">
+                    <strong>Telefone:</strong>
+                    <span>(21) 973****-****</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Localização -->
+            <div class="card">
+                <h3><i class="fa-solid fa-location-dot"></i> Localização & Correspondência</h3>
+                <div class="card-item">
+                    <strong>Logradouro:</strong>
+                    <span>Rua Seabra Filho, 28</span>
+                </div>
+                <div class="card-item">
+                    <strong>Bairro:</strong>
+                    <span>Inhoaiba</span>
+                </div>
+                <div class="card-item">
+                    <strong>CEP:</strong>
+                    <span>23062-000</span>
+                </div>
+                <div class="card-item">
+                    <strong>Município:</strong>
+                    <span>Rio de Janeiro - RJ</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>64.700.022 Serena Costa Alves &copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Swiper JS (Slider script) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
